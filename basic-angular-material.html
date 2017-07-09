@@ -1,0 +1,44 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.4/angular-material.min.css">
+  <title>Document</title>
+
+  <style>
+    .common { background-color: #f0f0f0; margin: 40px; }
+    .lightgreen { background-color: chartreuse; }
+    .lightblue { background-color: #03a9f4; }
+    .orange { background-color: orange; }
+    .cyan { background-color: cyan; }
+  </style>
+
+</head>
+<body ng-app="BlankApp">
+  <div layout="row" layout-xs="column">
+    <div class="lightgreen" flex>
+      I'm above on mobile, and to the left on larger devices.
+    </div>
+    <div class="orange" flex>
+      I'm below on mobile, and to the right on larger devices.
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-aria.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-messages.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.4/angular-material.min.js"></script>
+
+  <!-- Your application bootstrap  -->
+  <script type="text/javascript">
+    /**
+     * You must include the dependency on 'ngMaterial'
+     */
+    angular.module('BlankApp', ['ngMaterial']);
+  </script>
+
+</body>
+</html>

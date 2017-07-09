@@ -1,0 +1,82 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.4/angular-material.min.css">
+  <title>Document</title>
+
+  <style>
+    .common { background-color: #f0f0f0; margin: 40px; }
+    .lightgreen { background-color: chartreuse; }
+    .lightblue { background-color: #03a9f4; }
+    .orange { background-color: orange; }
+    .cyan { background-color: cyan; }
+  </style>
+
+</head>
+<body ng-app="BlankApp">
+
+<md-toolbar md-scroll-shrink="true" layout-padding class="md-tall md-toolbar-tools-bottom">
+  <span flex></span>
+  <div class="md-toolbar-tools">
+    <md-button class="md-icon-button">
+      <md-icon md-svg-src="../images/ic_menu_black_24px.svg"></md-icon>
+    </md-button>
+    <h2>Page Title</h2>
+    <span flex></span>
+    <md-button>An Action</md-button>
+  </div>
+</md-toolbar>
+
+<md-content layout="row">
+  <md-sidenav md-is-locked-open="$mdMedia('gt-sm')" flex="20" class="md-sidenav-left">
+    <h4>side nav content</h4>
+  </md-sidenav>
+
+  <md-tabs layout-padding flex="40" md-stretch-tabs="auto" md-center-tabs md-swipe-content>
+    <md-tab label="Tab-A">
+      <h4 layout-padding class="cyan">Welcome, This is the first tab !</h4>
+    </md-tab>
+    <md-tab label="Tab-B" layout-padding>
+      <h4 layout-padding class="lightblue">There you go, I stand second</h4>
+    </md-tab>
+    <md-tab label="Tab-C" layout-padding>
+      <h4 layout-padding class="lightgreen">At last, you got to me.</h4>
+    </md-tab>
+  </md-tabs>
+
+  <div layout-padding flex="40" class="orange">
+    The next version <br> of Mosquitto will provide<br> SSL support for network<br> encryption and authentication<br>. This work<br> is still in development, but is sufficiently advanced to make available for testing on test.mosquitto.org. In addition to the existing unencrypted access via port 1883, connections are now possible on ports 8883 and 8884.
+
+    Port 8883 provides<br> simple encrypted access. Your<br> client should<br> verify the server<br> certificate<br> using the CA certificate<br> available at http://test.mosquitto.org/ssl/mosquitto.org.crt
+
+    Port 8884 uses the<br> same server certificate, but<br> requires that your client provide a valid<br> certificate signed by the<br> mosquitto.org CA key. If you wish to obtain a client certificate for testing purposes, please get in touch.
+
+    The development<br> Python module provides client SSL<br> support. The latest<br> version is available<br> at http://test.mosquitto.org/ssl/mosquitto.py with a simple example at http://test.mosquitto.org/ssl/ssub.py. You will need to place the mosquitto.org CA certificate linked above in the same directory. All versions of Python from 2.7 upwards (including Python 3) are supported.
+
+    Please get in<br> touch if you have any problems.<br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    Update:
+
+    All clients in the development version now support SSL.
+  </div>
+</md-content>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-aria.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-messages.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.4/angular-material.min.js"></script>
+
+<!-- Your application bootstrap  -->
+<script type="text/javascript">
+  /**
+   * You must include the dependency on 'ngMaterial'
+   */
+  angular.module('BlankApp', ['ngMaterial']);
+</script>
+
+</body>
+</html>
